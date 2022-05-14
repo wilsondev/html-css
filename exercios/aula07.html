@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/Wikibooks-contribute-icon.svg.png" type="image/x-icon">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/novo/telefone.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/novo/taple.png" type="image/png">
+        <img src="imagem/novo/computador.png" alt="imagem de telefone">
+    </picture>
+    <h1>Colocando audio no site</h1>
+    <p>Vamos aprender a colocar audio no html5</p>
+    <audio>
+        <source src="midia/Gravação.m4a" type="audio/mpeg">
+    </audio>
+    <audio src="midia/Gravação.m4a" controls></audio>
+    <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/Gravação.m4a">Clique aqui para baixar o arquivo m4a</a></p>
+    <h1>Formatos de videos para o site</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video src="midia/video.mp4" width="560" poster="imagem/novo/telefone.png" controls></video>
+    <h1>Insirindo vídeo do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html> 

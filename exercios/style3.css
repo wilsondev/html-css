@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#fff, #2edf);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    text-align: left;
+    color: darkorange;
+    text-shadow: 2px 2px 3px rgb(163, 90, 0) ;
+}
+
+h1#principal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(140, 130, 185);
+    text-shadow: 2px 2px 3px rgb(163, 90, 0) ;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(152, 238, 24);
+}
+
+.titulo1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(77, 165, 96);
+}
+
+
+.titulo2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(72, 92, 136);
+}
+
+
+
+.titulo3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(26, 150, 42);
+}
+
+
+
+p {
+    text-align: justify;
+    padding: 2px;
+    text-indent: 30px;
+}

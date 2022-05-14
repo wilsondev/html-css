@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        :root {
+            --cor0: #c5ebd6;
+            --cor1: #83e1ad;
+            --cor2: #3ddc84;
+            --cor3: #2fa866;
+            --cor4: #1a5c37;
+            --cor5: #063d1e;
+
+            --fonte-padrao:arial, verdana, Helvetica, sans-serif;
+        }
+        body {
+            background-color: var(--cor0);
+            font-family: var(--fonte-padrao);
+        }
+
+
+        header {
+            background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+            min-height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        header > h1 {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+            font-size: 3em;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+        }
+
+        header > p {
+            color: white;
+            font-family: var(--fonte-padrao);
+            font-size: 1.2em;
+            max-width: 500px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            margin: auto;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+        }
+
+
+        nav {
+            background-color: var(--cor5);
+            padding: 10px;
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
+        }
+
+        nav > a {
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.5s;
+        }
+
+        nav > a:hover {
+            background-color: var(--cor2);
+            color: var(--cor5);
+        }
+
+        main {
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius: 10px; ;
+        }
+
+        picture > img {
+            width: 100%;
+        }
+
+        article > img {
+            width: 100%;
+        }
+
+        .pequena {
+            max-width: 350px;
+            display: block;
+            margin: auto;
+        }
+
+        .video {
+            background-color: var(--cor4);
+            margin: 0px -20px 0px -20px;
+            padding: 20px;
+            padding-bottom: 58%;
+            position: relative;
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+
+        main > article > h1 {
+            color: var(--cor5);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        main p {
+            margin: 15px 0px;
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 1.1em;
+            line-height: 1.8em;
+        }
+
+        main strong {
+            color: var(--cor4);
+            font-weight: bold;
+        }
+
+        main a {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--cor5);
+            background-color: var(--cor1);
+            padding: 2px 6px;
+        }
+
+        main > article > h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: var(--cor4);
+            font-size: 1.3em;
+            background-image: linear-gradient(to right, var(--cor1), transparent );
+            text-indent: 8px;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+            color: var(--cor4);
+        }
+
+        aside {
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.459);
+            margin: 20px;
+        }
+
+        aside > h3 {
+            background-color: var(--cor4);
+            color: white;
+            padding: 10px;
+            margin: -10px -10px 0px -10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        /*aside > h3:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            transition-duration: 1s;
+        }*/
+
+        aside > ul {
+            list-style-type: '\2714\00A0';
+            list-style-position: inside;
+            columns: 2;
+        }
+
+        footer {
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curiosidades de Tecnologias</h1>
+        <p>Tudo aquilo que voce sempre quis saber sobre o mundo Tech, em um unico lugar</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Noticias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+    <main>
+        <article>
+            <h1>Historia do Mascote de Android</h1>
+            <p>
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus dolor iusto officiis nobis nihil itaque distinctio tenetur quae laudantium adipisci minus iste, veniam eum ex? Non eaque enim aperiam.
+                Lorem ipsum dolor sit amet <strong>Android</strong> adipisicing elit. Illo, et odit error mollitia adipisci harum autem expedita accusantium itaque quam saepe, quis assumenda quos? Cumque amet saepe nesciunt sapiente maiores!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, adipisci quibusdam. Sint aperiam, reprehenderit sit veniam illum quas harum veritatis nisi consequuntur impedit suscipit error explicabo tempore. Sapiente, debitis exercitationem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati incidunt cum repellendus assumenda quo itaque ut ad? Illo quaerat nostrum omnis nihil expedita? Assumenda doloribus iste nostrum harum animi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur hic tempore voluptates molestias ratione laudantium. Eius aperiam quo consectetur ipsum, totam corporis quos vel asperiores quaerat, consequatur voluptatem omnis blanditiis!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos neque perferendis placeat alias maiores unde modi deleniti fugit beatae harum aliquid, sint adipisci quos saepe explicabo dolor expedita magni et.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis cupiditate laboriosam praesentium. Aliquam earum ut iste in saepe, cum vel reiciendis? Consectetur possimus doloribus saepe soluta eligendi, consequatur mollitia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis, autem molestiae quasi ab libero reprehenderit esse dolorum nostrum soluta magnam, magni itaque voluptate minus, minima quae natus harum exercitationem.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dignissimos expedita illo cupiditate quidem iste, optio sequi, totam suscipit modi temporibus vitae? Voluptas laudantium itaque delectus, aspernatur magni vel nisi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt consequatur eos dolorum obcaecati voluptatem repellendus dolores impedit voluptate quos aliquam illo, velit voluptates, sit distinctio eius. Illo, dolor perspiciatis?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eos error possimus rem voluptatibus illum quis nisi assumenda, officia repudiandae laudantium ipsum cupiditate dignissimos dolor quidem similique fugiat excepturi magnam.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto molestias accusamus, veniam officia ipsum eaque delectus nobis adipisci esse unde aliquam, velit quaerat cum laborum corporis voluptates, enim eum quos.
+            </p>
+            <h2>Primeira Versao</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ullam ut eos sequi magni sint tempore. Doloremque, odit possimus dicta porro fugit, impedit eos neque reprehenderit eum beatae, velit tempore.
+                Lorem ipsum dolor <a href="livro/20 - Mini-projeto Cordel.pdf" target="blank">Dar Morril</a> sit amet consectetur adipisicing elit. Odit amet, itaque minus sapiente fugiat inventore aliquam, labore eligendi, laboriosam autem earum debitis modi voluptatibus a eum quos cumque molestias at.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis quas dignissimos aspernatur adipisci. Optio, alias atque quia, repellat fugit nostrum ut adipisci aliquid nobis facilis ducimus velit, assumenda pariatur?
+            </p>
+            <picture>
+                <source media="(max-width:600px)" srcset="imagem/novo/telefone.png">
+                <img src="imagem/novo/taple.png" alt="Primeiro mascote do Android">
+            </picture>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, nesciunt ratione ab explicabo veniam assumenda eum eaque ducimus maiores corrupti neque minus recusandae quis atque accusamus quidem deserunt iusto nemo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eligendi velit ipsa corporis recusandae esse, quia cupiditate tempora accusantium, illum sapiente quasi laborum minus tenetur consectetur libero dolorem? Deleniti, dolores.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque laudantium neque aut nisi quo assumenda maxime earum itaque veritatis nobis iusto, inventore officia sed consequatur alias laboriosam quos rerum ipsa!
+            </p>
+            <h2>Surge um novo Mascote</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestiae, quis dolore voluptates iste, velit, officiis magnam ullam suscipit illo quibusdam? At aliquam quod impedit odio velit aliquid? Ea, ipsam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid commodi numquam eveniet sit sunt, facere ullam, quae maxime at molestias, tempora laborum ipsa magni omnis itaque ipsum et voluptas aspernatur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, possimus fugiat molestias id in recusandae vero exercitationem consequuntur iure doloribus, nam quo dolorum, veniam beatae quia fugit consectetur corporis. Quas!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas eum labore deserunt, numquam voluptate expedita maxime possimus illo iusto quam rem ab corporis accusantium unde molestias excepturi cum repudiandae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis enim omnis accusamus ducimus molestiae vel suscipit ipsum nihil porro culpa. Harum qui fugiat consectetur, ab libero atque vero quaerat repellendus.
+            </p>
+            <picture>
+                <source media="(max-width:600px)" srcset="imagem/novo/telefone.png">
+                <img src="imagem/novo/taple.png" alt="Irina Blok, criadora do Bugdroid"></picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem deserunt blanditiis optio, facere natus eius officiis, nulla vitae eaque ducimus sed distinctio, dicta voluptatem illum magni in a impedit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quam consequuntur placeat accusantium adipisci praesentium repellendus iste sit aut quos vitae asperiores voluptatem obcaecati consequatur possimus aliquid ratione temporibus magnam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quo corrupti eaque reprehenderit a itaque eius ex at quidem facilis facere, nemo dicta. Laboriosam, ducimus? Dolor ipsum quam nam fugiat.
+            </p>
+            <img class="pequena" src="imagem/css.html.png" alt="Bugdroid">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit est ea repudiandae! Iusto nesciunt explicabo aliquid rem harum fuga ea enim sed. Dolores ad laudantium doloremque fuga. Laudantium, sapiente.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid facere sit eius delectus tempore, fugit accusamus incidunt, molestias cum exercitationem, assumenda iusto beatae quibusdam? Quos libero doloremque hic odit!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem perferendis doloribus, est corporis dolor porro quibusdam illo, voluptate eligendi dicta modi dolores maxime fugit eveniet, alias nostrum nihil exercitationem? Recusandae.
+            </p>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <aside>
+                <h3>Quer aprender mais?</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eaque consequuntur. In, voluptas eum sint quos reiciendis ex corporis nulla? Obcaecati quasi, quidem repudiandae cumque explicabo sapiente sunt dolor enim.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores fugit ab unde, sunt et numquam ad dicta repellat veniam saepe deleniti ex perferendis ipsa reiciendis aliquam! Culpa earum eligendi placeat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem omnis illum at consequatur nisi quos perferendis quis ratione numquam doloribus? Nisi commodi vitae libero ducimus tempora ea quo harum accusantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae dolore exercitationem officiis voluptatem quas quam rem dolor, itaque sequi, beatae aliquam ad! Perspiciatis debitis, ad accusantium et cumque numquam.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus placeat eum, ipsum, aspernatur quisquam eveniet debitis sed reprehenderit quas tempore eligendi dignissimos? Ad aliquam laboriosam possimus fugiat sit est consequatur?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quo odio porro laboriosam nihil dicta sapiente pariatur sequi aut ullam aliquid corporis dolor excepturi veniam dignissimos similique amet eos incidunt!
+                </p>
+                
+                <ul>
+                    <li><abbr title="Bolo de coco">wilsnon</abbr></li>
+                    <li><abbr title="Rosquinha">Francisco</abbr></li>
+                    <li><abbr title="Bomba">joao</abbr></li>
+                    <li><abbr title="Iorgunte Congelado">antonio</abbr></li>
+                    <li><abbr title="Biscoito de Gingibre">David</abbr></li>
+                    <li><abbr title="Favo de Mel">rosaria</abbr></li>
+                    <li><abbr title="Saunduiche de Sorvete">isabel</abbr></li>
+                </ul>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt possimus ipsum minima atque, in magni ipsa, hic tempora dolore accusantium unde velit? Officia magnam quis, magni nisi nulla ipsum?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit nihil expedita nam culpa similique alias natus hic unde ipsa temporibus quisquam itaque quis asperiores soluta optio, quos a consequuntur?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ad quas saepe quos, esse deserunt impedit, dicta earum officiis eveniet doloremque iure praesentium blanditiis placeat ullam, veniam modi incidunt temporibus!
+                </p>
+            </aside>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure ad, voluptas perspiciatis illo voluptatem saepe natus sunt aliquam omnis, officia incidunt voluptatum est animi odio atque tempore, quam doloremque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magni, dolore commodi harum dolores velit expedita excepturi saepe alias. Quaerat eos repellat et adipisci impedit iste exercitationem vel expedita asperiores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique itaque amet architecto inventore perspiciatis explicabo iure ea totam facilis quibusdam voluptatem necessitatibus modi distinctio incidunt, ducimus nam iste magnam.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por <strong>Wilson Gamboa</strong></p>
+    </footer>    
+</body>
+</html>

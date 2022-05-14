@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+            div {
+                display: inline-block;
+                background-color: aqua;
+                border: 1px solid black;
+                text-align: center;
+                height: 200px;
+                width: 150px;
+            }
+
+            #d1 {
+                background-image:linear-gradient( #fff, #f3c);
+            }
+
+            #d3 >p {
+                display: none;
+            }
+
+            #d3:hover >p {
+                display: block;
+                background-color: blue;
+                cursor: pointer;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3
+        <p>wilson francisco</p>
+    </div>
+    
+</body>
+</html>
